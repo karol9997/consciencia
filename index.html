@@ -1,92 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frank Ocean</title>
-
-    <link rel="stylesheet" href="style3.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frank Ocean</title>
+  <link rel="stylesheet" href="style3.css" />
 </head>
 <body>
-    <header>
-        <div class="header-inner">
-            <span class="site-title">Frank Ocean</span>
-            <div class="botoes-header">
-                <button id="btn-musicas" class="btn-primario">Músicas</button>
-                <button id="btn-imagens" class="btn-primario">Imagens</button>
-            </div>
-        </div>
-    </header>
 
-    <main>
-        <div class="container">
-            <div class="texto">
-                <h2>Frank Ocean</h2>
-                <p>
-                    Frank Ocean, nascido Christopher Edwin Breaux em 28 de outubro de 1987, é um cantor, compositor e produtor norte-americano.
-                    Reconhecido por reinventar o R&B contemporâneo, Frank combina poesia, vulnerabilidade e inovação sonora em sua arte.
-                </p>
-                <p>
-                    Seus álbuns <b>Channel Orange</b> (2012) e <b>Blonde</b> (2016) são considerados obras-primas da música moderna, explorando
-                    temas de identidade, amor e liberdade artística.
-                </p>
-            </div>
-
-            <div class="imagem">
-                <img src="oceanlogo.jpg" alt="Frank Ocean">
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        © 2025 - Projeto Frank Ocean | Música e Identidade | Feito por Ana Karoline
-    </footer>
-
-    <div id="modal-musicas" class="modal" hidden>
-        <div class="modal-overlay" data-close="true"></div>
-        <div class="modal-content">
-            <header class="modal-header">
-                <h3>Músicas de Frank Ocean</h3>
-                <button class="modal-close" id="fechar-musicas">×</button>
-            </header>
-
-            <div class="modal-body">
-                <ol>
-                    <li>Nikes</li>
-                    <li>Thinkin Bout You</li>
-                    <li>Pink + White</li>
-                    <li>Ivy</li>
-                    <li>Nights</li>
-                </ol>
-            </div>
-
-            <footer class="modal-footer">
-                <button class="btn-primario" id="fechar-musicas-2">Fechar</button>
-            </footer>
-        </div>
+  <header>
+    <div class="header-inner">
+      <span class="site-title">Frank Ocean</span>
+      <div class="header-buttons">
+        <button id="btn-autores" class="btn-primario">Músicas</button>
+        <button id="btn-imagens" class="btn-primario">Imagens</button>
+      </div>
     </div>
+  </header>
 
- 
-    <div id="modal-imagens" class="modal" hidden>
-        <div class="modal-overlay" data-close="true"></div>
-        <div class="modal-content">
-            <header class="modal-header">
-                <h3>Galeria de Frank Ocean</h3>
-                <button class="modal-close" id="fechar-imagens">×</button>
-            </header>
+  <main>
+    <div class="container">
+      <div class="texto">
+        <h2>Frank Ocean</h2>
+        <p>
+          Frank Ocean, nascido Christopher Edwin Breaux, é um cantor, compositor e produtor musical americano conhecido por reinventar o R&B moderno.
+          Seu trabalho é marcado por letras introspectivas, experimentação sonora e uma estética única que mescla emoção e inovação.
+        </p>
+        <p>
+          Álbuns como <em>Channel Orange</em> e <em>Blonde</em> consolidaram Ocean como um dos artistas mais influentes do século XXI, 
+          destacando sua sensibilidade artística e autenticidade.
+        </p>
+      </div>
 
-            <div class="modal-body imagens-galeria">
-                <img src="ocean1.jpg" alt="Frank Ocean 2013">
-                <img src="ocean2.jpg" alt="Frank Ocean 2017">
-                <img src="ocean3.jpg" alt="Frank Ocean 2021">
-            </div>
-
-            <footer class="modal-footer">
-                <button class="btn-primario" id="fechar-imagens-2">Fechar</button>
-            </footer>
-        </div>
+      <div class="imagem">
+        <img src="oceanlogo.jpg" alt="Frank Ocean" />
+      </div>
     </div>
+  </main>
 
-    <script src="app3.js" defer></script>
+  <footer>
+    © 2025 - Frank Ocean | Música e Arte Contemporânea
+  </footer>
+
+
+  <div id="modal-autores" class="modal" hidden>
+    <div class="modal-overlay" data-close="true"></div>
+    <div class="modal-content">
+      <header class="modal-header">
+        <h3>Principais Músicas</h3>
+        <button id="modal-close-autores" class="modal-close">×</button>
+      </header>
+      <div class="modal-body">
+        <ol>
+          <li>Thinkin Bout You</li>
+          <li>Pink + White</li>
+          <li>Ivy</li>
+          <li>Nights</li>
+          <li>Self Control</li>
+        </ol>
+      </div>
+      <footer class="modal-footer">
+        <button id="modal-close-autores-2" class="btn-primario">Fechar</button>
+      </footer>
+    </div>
+  </div>
+
+
+  <div id="modal-imagens" class="modal" hidden>
+    <div class="modal-overlay" data-close="true"></div>
+    <div class="modal-content">
+      <header class="modal-header">
+        <h3>Imagens Frank Ocean</h3>
+        <button id="modal-close-imagens" class="modal-close">×</button>
+      </header>
+      <div class="modal-body imagens-grid">
+        <img src="ocean1.jpg" alt="Frank Ocean ao vivo" />
+        <img src="ocean2.jpg" alt="Frank Ocean 2013" />
+        <img src="ocean3.jpg" alt="Frank Ocean 2017" />
+      </div>
+      <footer class="modal-footer">
+        <button id="modal-close-imagens-2" class="btn-primario">Fechar</button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="app3.js" defer></script>
 </body>
 </html>
