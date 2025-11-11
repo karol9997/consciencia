@@ -4,36 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frank Ocean</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style3.css">
 </head>
 <body>
     <header>
-        <h1>Frank Ocean</h1>
-        <nav>
-            <button id="musicasBtn">🎵 Músicas</button>
-            <button id="imagensBtn">🖼️ Imagens</button>
-        </nav>
+        <div class="header-inner">
+            <span class="site-title">Frank Ocean</span>
+            <div class="botoes-header">
+                <button id="btn-musicas" class="btn-primario">Músicas</button>
+                <button id="btn-imagens" class="btn-primario">Imagens</button>
+            </div>
+        </div>
     </header>
 
     <main>
-        <div class="text-section">
-            <h2>Sobre Frank Ocean</h2>
-            <p>
-                Frank Ocean, nascido Christopher Edwin Breaux em 28 de outubro de 1987, é um cantor, compositor e produtor norte-americano conhecido por sua abordagem inovadora ao R&B e à música alternativa. 
-                Sua obra mistura introspecção emocional, lirismo poético e experimentação sonora. 
-                Ocean ganhou reconhecimento mundial com álbuns como <em>Channel Orange</em> (2012) e <em>Blonde</em> (2016), que são considerados marcos na música contemporânea.
-            </p>
-        </div>
+        <div class="container">
+            <div class="texto">
+                <h2>Frank Ocean</h2>
+                <p>
+                    Frank Ocean, nascido Christopher Edwin Breaux em 28 de outubro de 1987, é um cantor, compositor e produtor norte-americano.
+                    Reconhecido por reinventar o R&B contemporâneo, Frank combina poesia, vulnerabilidade e inovação sonora em sua arte.
+                </p>
+                <p>
+                    Seus álbuns <b>Channel Orange</b> (2012) e <b>Blonde</b> (2016) são considerados obras-primas da música moderna, explorando
+                    temas de identidade, amor e liberdade artística.
+                </p>
+            </div>
 
-        <div class="image-section">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Frank_Ocean_2019_%28cropped%29.jpg" alt="Frank Ocean">
+            <div class="imagem">
+                <img src="oceanlogo.jpg" alt="Frank Ocean">
+            </div>
         </div>
     </main>
 
     <footer>
-        © 2025 Projeto Frank Ocean
+        © 2025 - Projeto Frank Ocean | Música e Identidade | Feito por Ana Karoline
     </footer>
 
-    <script src="app.js"></script>
+    <div id="modal-musicas" class="modal" hidden>
+        <div class="modal-overlay" data-close="true"></div>
+        <div class="modal-content">
+            <header class="modal-header">
+                <h3>Músicas de Frank Ocean</h3>
+                <button class="modal-close" id="fechar-musicas">×</button>
+            </header>
+
+            <div class="modal-body">
+                <ol>
+                    <li>Nikes</li>
+                    <li>Thinkin Bout You</li>
+                    <li>Pink + White</li>
+                    <li>Ivy</li>
+                    <li>Nights</li>
+                </ol>
+            </div>
+
+            <footer class="modal-footer">
+                <button class="btn-primario" id="fechar-musicas-2">Fechar</button>
+            </footer>
+        </div>
+    </div>
+
+ 
+    <div id="modal-imagens" class="modal" hidden>
+        <div class="modal-overlay" data-close="true"></div>
+        <div class="modal-content">
+            <header class="modal-header">
+                <h3>Galeria de Frank Ocean</h3>
+                <button class="modal-close" id="fechar-imagens">×</button>
+            </header>
+
+            <div class="modal-body imagens-galeria">
+                <img src="ocean1.jpg" alt="Frank Ocean 2013">
+                <img src="ocean2.jpg" alt="Frank Ocean 2017">
+                <img src="ocean3.jpg" alt="Frank Ocean 2021">
+            </div>
+
+            <footer class="modal-footer">
+                <button class="btn-primario" id="fechar-imagens-2">Fechar</button>
+            </footer>
+        </div>
+    </div>
+
+    <script src="app3.js" defer></script>
 </body>
 </html>
